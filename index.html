@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form>
+    <p>Nhap so thang</p>
+    <input id="x" type="number">
+    <button onclick="tinh()">tinh so ngay</button>
+    <script>
+        function tinh() {
+            let x = parseInt(document.getElementById("x").value);
+            switch (x) {
+                case 1:
+                case 3:
+                case 5:
+                case 7:
+                case 8:
+                case 10:
+                case 12:
+                    alert("co 31 ngay");
+                    break;
+                case 4:
+                case 6:
+                case 9:
+                case 11:
+                    alert("co 30 ngay");
+                    break;
+                case 2:
+                    alert("co 28 hoac 29 ngay");
+                    break;
+                default:
+                    alert("So thang ko hop le");
+            }
+        }
+    </script>
+</form>
+</body>
+</html>
